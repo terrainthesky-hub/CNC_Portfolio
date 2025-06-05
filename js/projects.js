@@ -27,7 +27,7 @@ const projects = [
         title: "Manual Machining",
         description: "Projects created using a manual mill, 6-sided die.",
         tags: ["CNC", "Manual Mill", "Machining"],
-        image: "assets/images/cnc_portfolio/6_side_dice", // Use the Genmitsu image as a thumbnail
+        image: "assets/images/cnc_portfolio/6_side_dice.png", // Use the Genmitsu image as a thumbnail
         liveUrl: "manual-mill.html", // Links to the new page
         repoUrl: "" 
     },
