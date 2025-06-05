@@ -135,7 +135,7 @@ nav {
     font-size: 1.8rem;
     color: var(--text-muted);
     margin-bottom: 20px;
-    min-height: 2.2rem; /* To prevent layout shift during typing */
+    min-height: 4rem; 
 }
 
 .hero-content .description {
