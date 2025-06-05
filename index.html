@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Name | Portfolio</title>
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- Header & Navigation -->
+    <header>
+        <nav>
+            <a href="#home" class="logo">Lesley Rich</a>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="home" class="hero">
+            <div class="hero-content">
+                <h1>Hi, I'm <span class="highlight">Lesley Rich</span></h1>
+                <p class="subtitle" id="subtitle">CNC Machinist</p>
+                <p class="description">I build, design, and manufacture parts out of metal materials.</p>
+                <a href="#projects" class="btn">View My Work</a>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="about">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <div class="about-image">
+                    <img src="assets/images/profile.png" alt="Your Name">
+                </div>
+                <div class="about-text">
+                    <p>Hello! I'm a CNC machinist, software developer, data scientist, creative and technical writer that loves to work on new and interesting projects and utilize my diverse skillsets.</p>
+                    <p>Here are a few skills I've developed:</p>
+                    <ul class="skills-list">
+                        <li>JavaScript (ES6+)</li>
+                        <li>React</li>
+                        <li>Node.js</li>
+                        <li>CSS & Sass</li>
+                        <li>HTML5</li>
+                        <li>Python</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="projects">
+            <h2 class="section-title">My Projects</h2>
+            <div class="projects-grid" id="projects-grid">
+                <!-- Projects will be dynamically inserted here by JavaScript -->
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact">
+            <h2 class="section-title">Get In Touch</h2>
+            <p>Have a question or want to work together? Feel free to reach out!</p>
+            <!-- 
+                IMPORTANT:
+                1. Go to https://formspree.io/ and create a new form.
+                2. Replace "YOUR_FORM_ID" with your actual Formspree form ID.
+            -->
+            <form id="contact-form" action="https://formspree.io/f/mqabaobw" method="POST">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <textarea name="message" placeholder="Your Message" required></textarea>
+                <button type="submit" class="btn">Send Message</button>
+            </form>
+            <p id="form-status"></p>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="social-links">
+            <a href="https://github.com/your-username" target="_blank"><i class="fab fa-github"></i></a>
+            <a href="https://linkedin.com/in/your-username" target="_blank"><i class="fab fa-linkedin"></i></a>
+            <a href="https://twitter.com/your-username" target="_blank"><i class="fab fa-twitter"></i></a>
+        </div>
+        <p>© 2025 Lesley Rich. All rights reserved.</p>
+    </footer>
+
+    <!-- JS Files -->
+    <script src="js/projects.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
