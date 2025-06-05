@@ -52,7 +52,7 @@ document.addEventListener('DOMContentLoaded', () => {
                             ${project.tags.map(tag => `<span>${tag}</span>`).join('')}
                         </div>
                         <div class="project-links">
-                            ${project.liveUrl ? `<a href="${project.liveUrl}" target="_blank">Live Demo</a>` : ''}
+                            ${project.liveUrl ? `<a href="${project.liveUrl}" target="_blank">Link</a>` : ''}
                             ${project.repoUrl ? `<a href="${project.repoUrl}" target="_blank">GitHub Repo</a>` : ''}
                         </div>
                     </div>
