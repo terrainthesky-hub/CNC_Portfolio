@@ -4,9 +4,8 @@ const projects = [
         title: "CNC Portfolio Overview",
         description: "A comprehensive slide deck showcasing my skills, key projects, and professional background. Click to see the detailed breakdown.",
         tags: ["Case Study", "Full-Stack", "Project Management"],
-        image: "assets/images/CAD.png", // Use a good thumbnail image!
-        liveUrl: "cnc-portfolio-detail.html", // THIS IS THE IMPORTANT CHANGE
-        repoUrl: "https://github.com/terrainthesky-hub/CNC_Portfolio" // Optional: link to the repo
+        image: "assets/images/turners_cube.png", // Use a good thumbnail image!
+        liveUrl: "project-template.html", // THIS IS THE IMPORTANT CHANGE
     },
     {
         title: "Programming Portfolio",
