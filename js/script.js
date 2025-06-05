@@ -3,11 +3,11 @@ document.addEventListener('DOMContentLoaded', () => {
     // --- Typewriter Effect for Hero Subtitle ---
     const subtitleElement = document.getElementById('subtitle');
     const subtitles = [
+        "CNC Machinist",
         "CAD/CAM creator",
         "Data Scientist",
         "Software Developer",
-        "Creative Writer",
-        "Technical Writer"
+        "Creative/Technical Writer",
     ];
     let subtitleIndex = 0;
     let charIndex = 0;
