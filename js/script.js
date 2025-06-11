@@ -52,7 +52,7 @@ document.addEventListener('DOMContentLoaded', () => {
                             ${project.tags.map(tag => `<span>${tag}</span>`).join('')}
                         </div>
                         <div class="project-links">
-                            ${project.liveUrl ? `<a href="${project.liveUrl}" target="_blank">Link</a>` : ''}
+                            ${project.liveUrl ? `<a href="${project.liveUrl}">Link</a>` : ''}
                             ${project.repoUrl ? `<a href="${project.repoUrl}" target="_blank">GitHub Repo</a>` : ''}
                         </div>
                     </div>
@@ -113,5 +113,25 @@ document.addEventListener('DOMContentLoaded', () => {
 
     if (form) {
         form.addEventListener("submit", handleSubmit);
+    }
+
+    // --- Image Lightbox ---
+    const galleryImages = document.querySelectorAll('.gallery-item img, .project-card img');
+    if (galleryImages.length > 0) {
+        const lightbox = document.createElement('div');
+        lightbox.id = 'lightbox';
+        document.body.appendChild(lightbox);
+
+        galleryImages.forEach(img => {
+            img.style.cursor = 'pointer';
+            img.addEventListener('click', () => {
+                lightbox.innerHTML = `<img src="${img.src}" alt="">`;
+                lightbox.classList.add('active');
+            });
+        });
+
+        lightbox.addEventListener('click', () => {
+            lightbox.classList.remove('active');
+        });
     }
 });
