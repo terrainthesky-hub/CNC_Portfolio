@@ -8,8 +8,8 @@ const projects = [
         repoUrl: "" 
     },
     {
-        title: "CNC with Genmitsu",
-        description: "Projects created using a Genmitsu CNC router and a manual mill, including styrofoam shapes and a 6-sided die.",
+        title: "CNC",
+        description: "Projects created using a CNC router and a manual mill, including styrofoam and aluminum stock.",
         tags: ["CNC", "CAD", "CAM", "Manual Mill", "Machining"],
         image: "assets/images/cnc_portfolio/Genmitsu.png", // Use the Genmitsu image as a thumbnail
         liveUrl: "cnc-machining.html", // Links to the new page
