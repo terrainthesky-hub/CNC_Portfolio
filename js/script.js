@@ -43,7 +43,7 @@ document.addEventListener('DOMContentLoaded', () => {
     if (projectsGrid) {
         projects.forEach(project => {
             const projectCard = `
-                <div class="project-card">
+                <a href="${project.liveUrl}" class="project-card">
                     <img src="${project.image}" alt="${project.title}">
                     <div class="project-info">
                         <h3>${project.title}</h3>
@@ -51,12 +51,9 @@ document.addEventListener('DOMContentLoaded', () => {
                         <div class="project-tags">
                             ${project.tags.map(tag => `<span>${tag}</span>`).join('')}
                         </div>
-                        <div class="project-links">
-                            ${project.liveUrl ? `<a href="${project.liveUrl}">Link</a>` : ''}
-                            ${project.repoUrl ? `<a href="${project.repoUrl}" target="_blank">GitHub Repo</a>` : ''}
-                        </div>
+                        ${project.repoUrl ? `<div class="project-links"><a href="${project.repoUrl}" target="_blank">GitHub Repo</a></div>` : ''}
                     </div>
-                </div>
+                </a>
             `;
             projectsGrid.innerHTML += projectCard;
         });
@@ -116,7 +113,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     // --- Image Lightbox ---
-    const galleryImages = document.querySelectorAll('.gallery-item img, .project-card img');
+    const galleryImages = document.querySelectorAll('.gallery-item img');
     if (galleryImages.length > 0) {
         const lightbox = document.createElement('div');
         lightbox.id = 'lightbox';
