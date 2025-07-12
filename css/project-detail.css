@@ -70,7 +70,7 @@
     max-width: 800px;
     margin: 2rem auto;
     padding: 1.5rem;
-    background-color: #f9f9f9;
+    background-color: var(--bg-color);
     border-left: 4px solid var(--primary-color);
     border-radius: 4px;
 }
@@ -79,7 +79,7 @@
     margin-top: 0;
     margin-bottom: 1rem;
     font-size: 1.2rem;
-    color: #333;
+    color: var(--text-color);
 }
 
 .project-nav-links ul {
@@ -92,11 +92,12 @@
 }
 
 .project-nav-links ul li a {
+    background-color: var(--secondary-color);
     text-decoration: none;
     color: var(--primary-color);
     font-weight: 600;
     padding: 0.5rem 1rem;
-    border: 1px solid #ddd;
+    border: 1px solid var(--secondary-color);
     border-radius: 20px;
     transition: all 0.3s ease;
 }
